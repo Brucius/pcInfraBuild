@@ -11,13 +11,13 @@ provider "azurerm" {
   features {}
 }
 
-backend "remote" {
-  organization = "opworks"
+# backend "remote" {
+#   organization = "opworks"
 
-  workspaces {
-    name = "pcInfra"
-  }
-}
+#   workspaces {
+#     name = "pcInfra"
+#   }
+# }
 
 # Create a resource group
 resource "azurerm_resource_group" "rg" {
