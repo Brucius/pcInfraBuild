@@ -1,7 +1,7 @@
 variable "location" {}
 
 variable "computer_name" {
-  type = string
+  type        = string
   description = "Name of the computer"
 }
 
@@ -21,11 +21,9 @@ variable "prefix" {
 }
 
 variable "tags" {
-  type = map
-
   default = {
-    "Owner" = "Oaker"
-    "Purpose" = "PersonalComputer"
+    "Owner"      = "Oaker"
+    "Purpose"    = "PersonalComputer"
     "Department" = "ReliabilityEngineering"
   }
 }
@@ -33,6 +31,6 @@ variable "tags" {
 variable "sku" {
   default = {
     southeastasia = "19h2-pro"
-    eastasia = "19h1-pro"
+    eastasia      = "19h1-pro"
   }
 }
